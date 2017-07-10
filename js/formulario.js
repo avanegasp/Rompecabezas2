@@ -1,7 +1,17 @@
+
+
 (function(){
+
+	$('.submenu').click(function(){
+	  $(this).children('ul').slideToggle();
+	})
+
+	$('ul').click(function(p){
+	  p.stopPropagation();
+	})
+	
 	var formulario = document.formulario_registro,
 			elementos = formulario.elements;
-
 			// Functions
 			var validarInputs = function(){
 				for(var i = 0; i < elementos.length; i++){
