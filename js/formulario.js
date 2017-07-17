@@ -9,7 +9,7 @@
 	$('ul').click(function(p){
 	  p.stopPropagation();
 	})
-	
+
 	var formulario = document.formulario_registro,
 			elementos = formulario.elements;
 			// Functions
